@@ -1,12 +1,14 @@
 CC = gcc
-CFLAGS = -Wall -Wextra
-OBJ = main.o bst.o
+CFLAGS = -Wall -Wextra -std=c11 -Iinclude
 
-run: $(OBJ)
-	$(CC) $(CFLAGS) -o run $(OBJ)
+run: main.o bst.o
+	$(CC) $(CFLAGS) -o run main.o bst.o
 
-main.o: main.c bst.h
-bst.o: bst.c bst.h
+main.o: main.c include/stella/bst.h
+	$(CC) $(CFLAGS) -c main.c
+
+bst.o: src/bst.c include/stella/bst.h
+	$(CC) $(CFLAGS) -c src/bst.c
 
 clean:
-	rm -f run $(OBJ)
+	rm -f run *.o

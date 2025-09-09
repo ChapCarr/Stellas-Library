@@ -1,4 +1,4 @@
-#include "bst.h"
+#include "stella/bst.h"
 #include <stdio.h>
 #include <stdlib.h>
 

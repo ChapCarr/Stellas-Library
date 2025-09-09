@@ -1,5 +1,5 @@
-#ifndef BST_H_
-#define BST_H_
+#ifndef STELLA_BST_H_
+#define STELLA_BST_H_
 
 /**
  * Binary search trees are a

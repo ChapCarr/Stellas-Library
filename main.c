@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "bst.h"
+#include <stella/bst.h>
 
 int main(){
 
