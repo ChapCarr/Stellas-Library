@@ -72,3 +72,22 @@ treeNode* loadTree(int* arr, int size){
 
    return head; 
 }
+
+treeNode* searchTree(treeNode* n, int key){
+    while(n != NULL){
+        if(key < n->value){ // search left 
+            
+            n = n->left;
+        }else if(key > n->value){ // search right
+            
+            n = n->right;
+        }else{ // found
+            
+            return n;
+        }
+
+    }
+    
+    return NULL; // not found
+
+}

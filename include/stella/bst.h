@@ -19,4 +19,6 @@ void printTree(treeNode* head);
 treeNode *createNode(int value);
 treeNode* loadTree(int* arr, int size);
 treeNode* insertNode(treeNode* head, int value);
+
+treeNode* searchTree(treeNode* n, int keyVal);
 #endif // bst.h
